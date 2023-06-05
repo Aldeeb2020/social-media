@@ -1,0 +1,97 @@
+/*******************
+    Colors 
+*********************/
+.bg-first-color{
+    background-color: #1e1f23;
+}
+.bg-second-color{
+    background-color: #27282f;
+
+}
+
+/*******************
+    flex components 
+*********************/
+
+/**Start Flex ******/ 
+.flex{
+    display: flex;
+}
+
+/*******************
+    Justify
+**************************/
+
+/**Justify Between******/ 
+.just--between{
+    justify-content: space-between;
+}
+
+/**Justify start******/ 
+.just--start{
+    justify-content: flex-start;
+}
+
+/**Justify center******/ 
+.just--center{
+    justify-content: center;
+}
+
+/**Justify end******/ 
+.just--end{
+    justify-content: end;
+}
+
+/*******************
+    Align
+**************************/
+
+/**align start******/ 
+.align--start{
+    align-items: flex-start;
+}
+
+/**Justify center******/ 
+.align--center{
+    align-items: center;
+}
+
+/**Justify end******/ 
+.align--end{
+    align-items: flex-end;
+}
+
+
+/*******************
+    Text-align
+**************************/
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+
+
+/**gap******/ 
+.gap-5{
+    gap: 5px;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.gap-20{
+    gap: 20px;
+}
+/*******************
+    Color components 
+*********************/
+
+
