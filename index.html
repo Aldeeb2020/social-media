@@ -7,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quries.css">
 
     
     <title>Hello, world!</title>
@@ -17,25 +17,35 @@
   
   <body>
   <div class="container-fluid he">
-    <div class="row h-100">
-        <div class="col-3 left-side main-color-border">
-          <div class="logo">
-            <img src="images/facebook-logo.png" alt="">
+    <div class="row">
+        <!-----------Left side ------------>
+        <div class="col-3  left-side main-color-border">
+         
+          <!-----------Logo------------>
+          <div class="logo flex just--between align--center">
+            <img src="images/forbes.png" alt="">
+            <ion-icon class="icon-close-nav" name="close-outline"></ion-icon>
+
           </div>
+          
+          <!-------------------------- Search And Nav -------------------------------->          
           <div class="nav">
             <div class="search flex">
               <img src="icons/location.png" alt="">
               <input placeholder="Explore Dev....." class="main-color-border" type="text" name="" id="">
             </div>
-
             <div class="active"><span><img src="icons/home.png" alt=""> Home</span></div>
             <div><span><img src="icons/people.png" alt=""> Community</span></div>
-            <div><span><img src="icons/parcel.png" alt=""> Marketplace </span><span class="nav-small-number">4 new listing</span></div>
+            <div><span><img src="icons/parcel.png" alt=""> Marketplace </span><span class="nav-small-number">4  <span class="new-list-text">new listing</span> </span></div>
             <div><span><img src="icons/event.png" alt=""> Events</span></div>
             <div><span><img src="icons/newspaper.png" alt=""> News feed</span></div>
           </div>
+          <!------------------------- End Search And Nav ------------------------------>          
+
+
+          <!------------------------- My Community ------------------------------------>          
           <div class="community">
-            <div class="community-header">
+            <div class="community-header flex just--between">
               <h3>My community</h3>
               <span>29</span>
             </div>
@@ -44,8 +54,12 @@
             <div><img src="images/personal/customer-4.jpg" alt=""> <div class="community-info"><p>Frontend UI Designer</p><p>734 members</p></div></div>
             <div><img src="images/personal/ben.jpg" alt=""> <div class="community-info"><p>Indonesia Website Dev</p><p>734 members</p></div></div>
           </div>
+          <!--------------------------End My Community-------------------------------->          
+
+
+          <!--------------------------Start Upcomming event---------------------------->          
           <div class="community">
-            <div class="community-header">
+            <div class="community-header flex just--between">
               <h3>Upcomming event</h3>
               <span>18</span>
             </div>
@@ -55,15 +69,23 @@
             <div><div class="community-date"><p>20</p><p>Dec</p></div><div class="community-info"><p>Indonesia UI Designer</p><p>734 members</p></div></div>
           </div>
         </div>
-          <div class="col-9 right-side ">
-          <div class="row h-100">
+        <!----------------------------End Upcomming event------------------------------->          
+        <!----------------------------End Left side ------------------------------------>
+
+
+        <!----------------------------Start Right side ------------------------------------>
+          <div class="col-9 right-side content-open">
+          <div class="row">
+
+            <!----------------------------Start Header------------------------------------>            
             <header class="main-header main-color main-color-border flex align-items-center">
              <div class="home flex" >
+              <ion-icon class="menu-icon" name="menu"></ion-icon>
               <img src="icons/home.png" alt="">
                <p class="flex">Home</p>
              </div>
              <div class="explore-section main-color-border flex gap-10">
-                <div class="">Explore</div>
+                <div class="active">Explore</div>
                 <div class="">Comunity Feeds </div>
                 <div class="">Mutial Friends</div>
              </div>
@@ -82,6 +104,10 @@
                 </div>
              </div>
             </header>
+            <!----------------------------End Header------------------------------------>            
+
+
+
             <div class="col-8">
                 <div class="center-section-container">
                   <div class="post-section main-color-border">
@@ -103,10 +129,12 @@
                       </div>
                     </div>
                   </div>
-                  <div class="posts">
 
+                  <!-------------------All Posts------------------>
+                  <div class="posts">
                     <!-------------------Post Start ------------------>
                       <div class="post main-color-border">
+                        <!-------------------Start Post Header------------------>
                         <div class="post-header flex just--between align--center">
                             <div class="img-name-section flex gap-10">
                               <img src="images/personal/person-1.jpg" alt="">
@@ -120,15 +148,26 @@
                               <img src="icons/more .png" alt="">
                             </div>
                         </div>
+                        <!------------------- End Post Header------------------>
+
+                        <!-------------------Start Post Content------------------>
                         <div class="post-content">
                             <p>Lorem ipsum adipisicing elit. Veritatis laborum quas aliquam consecteturlam minima culpa sunt!</p>
                             <img src="images/post-1.jpg" alt="">
                         </div>
+                        <!-------------------End Post Content------------------>
+
+
+                        <!-------------------Start Post Action ------------------>                        
                         <div class="post-do flex just--center">
-                          <div class="like flex gap-10 align--center just--center"><img src="icons/like.png" alt=""><p>Like</p><span>12</span></div>
+                          <div class="like active flex gap-10 align--center just--center"><img src="icons/like.png" alt=""><p>Like</p><span>12</span></div>
                           <div class="Comments flex gap-10 align--center just--center"><img src="icons/comment.png" alt=""><p>Comments</p><span>24</span></div>
                           <div class="Share flex gap-10 align--center just--center"><img src="icons/share.png" alt=""><p>Share</p><span>3</span></div>
                         </div>
+                        <!-------------------End Post Action ------------------>                        
+
+
+                        <!-------------------Start Post Comments do ------------------>                        
                         <div class="post-comment flex gap-20">
                           <div class="comment-photo">
                             <img src="images/personal/person-1.jpg" alt="">
@@ -143,6 +182,10 @@
                             </div>
                           </div>
                         </div>
+                        <!-------------------End Post Comments do ------------------>                        
+
+
+                        <!-------------------Start Comments header ------------------>                        
                         <div class="comments-header flex just--between">
                           <div class="all-comments flex gap-10">
                             <p>All Comments</p><img src="icons/down-arrow.png" alt="">
@@ -151,6 +194,10 @@
                             <p>sort by <span>Most Popular</span></p>
                           </div>
                         </div>   
+                        <!-------------------End Comments header ------------------>                        
+
+
+                        <!-------------------Start Comment------------------>                        
                         <div class="comment flex just--between gap-10">
                           <div class="comment-photo">
                             <img src="images/personal/person-1.jpg" alt="">
@@ -168,13 +215,19 @@
                             <img src="icons/down-arrow.png" alt=""> <samp>Downvote</samp>
                           </div>
                         </div>
+                        <!-------------------End Comment------------------>                        
+                    
+
+                        <!-------------------Show All Comment------------------>                        
                         <div class="view-all-comments text-center">
                           <a href="">View all comments</a>
-                        </div>                    
+                        </div>
+
                       </div>
                       <!-------------------Post End------------------>
                     <!-------------------Post Start ------------------>
                       <div class="post main-color-border">
+                        <!-------------------Start Post Header------------------>
                         <div class="post-header flex just--between align--center">
                             <div class="img-name-section flex gap-10">
                               <img src="images/personal/person-1.jpg" alt="">
@@ -188,15 +241,26 @@
                               <img src="icons/more .png" alt="">
                             </div>
                         </div>
+                        <!------------------- End Post Header------------------>
+
+                        <!-------------------Start Post Content------------------>
                         <div class="post-content">
                             <p>Lorem ipsum adipisicing elit. Veritatis laborum quas aliquam consecteturlam minima culpa sunt!</p>
                             <img src="images/post-1.jpg" alt="">
                         </div>
+                        <!-------------------End Post Content------------------>
+
+
+                        <!-------------------Start Post Action ------------------>                        
                         <div class="post-do flex just--center">
-                          <div class="like flex gap-10 align--center just--center"><img src="icons/like.png" alt=""><p>Like</p><span>12</span></div>
+                          <div class="like active flex gap-10 align--center just--center"><img src="icons/like.png" alt=""><p>Like</p><span>12</span></div>
                           <div class="Comments flex gap-10 align--center just--center"><img src="icons/comment.png" alt=""><p>Comments</p><span>24</span></div>
                           <div class="Share flex gap-10 align--center just--center"><img src="icons/share.png" alt=""><p>Share</p><span>3</span></div>
                         </div>
+                        <!-------------------End Post Action ------------------>                        
+
+
+                        <!-------------------Start Post Comments do ------------------>                        
                         <div class="post-comment flex gap-20">
                           <div class="comment-photo">
                             <img src="images/personal/person-1.jpg" alt="">
@@ -211,6 +275,10 @@
                             </div>
                           </div>
                         </div>
+                        <!-------------------End Post Comments do ------------------>                        
+
+
+                        <!-------------------Start Comments header ------------------>                        
                         <div class="comments-header flex just--between">
                           <div class="all-comments flex gap-10">
                             <p>All Comments</p><img src="icons/down-arrow.png" alt="">
@@ -219,6 +287,10 @@
                             <p>sort by <span>Most Popular</span></p>
                           </div>
                         </div>   
+                        <!-------------------End Comments header ------------------>                        
+
+
+                        <!-------------------Start Comment------------------>                        
                         <div class="comment flex just--between gap-10">
                           <div class="comment-photo">
                             <img src="images/personal/person-1.jpg" alt="">
@@ -236,362 +308,32 @@
                             <img src="icons/down-arrow.png" alt=""> <samp>Downvote</samp>
                           </div>
                         </div>
+                        <!-------------------End Comment------------------>                        
+                    
+
+                        <!-------------------Show All Comment------------------>                        
                         <div class="view-all-comments text-center">
                           <a href="">View all comments</a>
-                        </div>                    
+                        </div>
+
                       </div>
                       <!-------------------Post End------------------>
-                    <!-------------------Post Start ------------------>
-                      <div class="post main-color-border">
-                        <div class="post-header flex just--between align--center">
-                            <div class="img-name-section flex gap-10">
-                              <img src="images/personal/person-1.jpg" alt="">
-                              <div class="info flex">
-                                <p class="name">Abdulaziz Aldeeb</p>
-                                <p class="date">12 minutes ago</p>
-                              </div>
-                            </div>
-                            <div class="options flex gap-10">
-                              <img src="icons/save-instagram.png" alt="">
-                              <img src="icons/more .png" alt="">
-                            </div>
-                        </div>
-                        <div class="post-content">
-                            <p>Lorem ipsum adipisicing elit. Veritatis laborum quas aliquam consecteturlam minima culpa sunt!</p>
-                            <img src="images/post-1.jpg" alt="">
-                        </div>
-                        <div class="post-do flex just--center">
-                          <div class="like flex gap-10 align--center just--center"><img src="icons/like.png" alt=""><p>Like</p><span>12</span></div>
-                          <div class="Comments flex gap-10 align--center just--center"><img src="icons/comment.png" alt=""><p>Comments</p><span>24</span></div>
-                          <div class="Share flex gap-10 align--center just--center"><img src="icons/share.png" alt=""><p>Share</p><span>3</span></div>
-                        </div>
-                        <div class="post-comment flex gap-20">
-                          <div class="comment-photo">
-                            <img src="images/personal/person-1.jpg" alt="">
-                          </div>
-                          <div class="comment-do flex align--center">
-                            <input type="text">
-                            <div class="comment-do-options flex gap-10">
-                              <img src="icons/camera.png" alt="">
-                              <img src="icons/image-gallery.png" alt="">
-                              <img src="icons/attach-file.png" alt="">
-                              <img src="icons/smile.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="comments-header flex just--between">
-                          <div class="all-comments flex gap-10">
-                            <p>All Comments</p><img src="icons/down-arrow.png" alt="">
-                          </div>
-                          <div class="sort">
-                            <p>sort by <span>Most Popular</span></p>
-                          </div>
-                        </div>   
-                        <div class="comment flex just--between gap-10">
-                          <div class="comment-photo">
-                            <img src="images/personal/person-1.jpg" alt="">
-                          </div>
-                          <div class="comment-name-content">
-                            <span class="name">Abdulaziz:</span>
-                            <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt dolor iure aperiam illo nesciunt cumque corporis iste nobis voluptates. Necessitatibus corporis quasi maxime iusto molestias fuga sint, nam hic?</span>
-                          </div>
-                        </div> 
-                        <div class="comment-footer flex just--between">
-                          <div class="reply flex gap-5"><img src="icons/share.png" alt=""><span>Reply comments</span></div>
-                          <div class="up-down">
-                            <img src="icons/down-arrow.png" alt=""> <span>Upvote</span>
-                            <span>|</span>
-                            <img src="icons/down-arrow.png" alt=""> <samp>Downvote</samp>
-                          </div>
-                        </div>
-                        <div class="view-all-comments text-center">
-                          <a href="">View all comments</a>
-                        </div>                    
-                      </div>
-                      <!-------------------Post End------------------>
-                    <!-------------------Post Start ------------------>
-                      <div class="post main-color-border">
-                        <div class="post-header flex just--between align--center">
-                            <div class="img-name-section flex gap-10">
-                              <img src="images/personal/person-1.jpg" alt="">
-                              <div class="info flex">
-                                <p class="name">Abdulaziz Aldeeb</p>
-                                <p class="date">12 minutes ago</p>
-                              </div>
-                            </div>
-                            <div class="options flex gap-10">
-                              <img src="icons/save-instagram.png" alt="">
-                              <img src="icons/more .png" alt="">
-                            </div>
-                        </div>
-                        <div class="post-content">
-                            <p>Lorem ipsum adipisicing elit. Veritatis laborum quas aliquam consecteturlam minima culpa sunt!</p>
-                            <img src="images/post-1.jpg" alt="">
-                        </div>
-                        <div class="post-do flex just--center">
-                          <div class="like flex gap-10 align--center just--center"><img src="icons/like.png" alt=""><p>Like</p><span>12</span></div>
-                          <div class="Comments flex gap-10 align--center just--center"><img src="icons/comment.png" alt=""><p>Comments</p><span>24</span></div>
-                          <div class="Share flex gap-10 align--center just--center"><img src="icons/share.png" alt=""><p>Share</p><span>3</span></div>
-                        </div>
-                        <div class="post-comment flex gap-20">
-                          <div class="comment-photo">
-                            <img src="images/personal/person-1.jpg" alt="">
-                          </div>
-                          <div class="comment-do flex align--center">
-                            <input type="text">
-                            <div class="comment-do-options flex gap-10">
-                              <img src="icons/camera.png" alt="">
-                              <img src="icons/image-gallery.png" alt="">
-                              <img src="icons/attach-file.png" alt="">
-                              <img src="icons/smile.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="comments-header flex just--between">
-                          <div class="all-comments flex gap-10">
-                            <p>All Comments</p><img src="icons/down-arrow.png" alt="">
-                          </div>
-                          <div class="sort">
-                            <p>sort by <span>Most Popular</span></p>
-                          </div>
-                        </div>   
-                        <div class="comment flex just--between gap-10">
-                          <div class="comment-photo">
-                            <img src="images/personal/person-1.jpg" alt="">
-                          </div>
-                          <div class="comment-name-content">
-                            <span class="name">Abdulaziz:</span>
-                            <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt dolor iure aperiam illo nesciunt cumque corporis iste nobis voluptates. Necessitatibus corporis quasi maxime iusto molestias fuga sint, nam hic?</span>
-                          </div>
-                        </div> 
-                        <div class="comment-footer flex just--between">
-                          <div class="reply flex gap-5"><img src="icons/share.png" alt=""><span>Reply comments</span></div>
-                          <div class="up-down">
-                            <img src="icons/down-arrow.png" alt=""> <span>Upvote</span>
-                            <span>|</span>
-                            <img src="icons/down-arrow.png" alt=""> <samp>Downvote</samp>
-                          </div>
-                        </div>
-                        <div class="view-all-comments text-center">
-                          <a href="">View all comments</a>
-                        </div>                    
-                      </div>
-                      <!-------------------Post End------------------>
-                    <!-------------------Post Start ------------------>
-                      <div class="post main-color-border">
-                        <div class="post-header flex just--between align--center">
-                            <div class="img-name-section flex gap-10">
-                              <img src="images/personal/person-1.jpg" alt="">
-                              <div class="info flex">
-                                <p class="name">Abdulaziz Aldeeb</p>
-                                <p class="date">12 minutes ago</p>
-                              </div>
-                            </div>
-                            <div class="options flex gap-10">
-                              <img src="icons/save-instagram.png" alt="">
-                              <img src="icons/more .png" alt="">
-                            </div>
-                        </div>
-                        <div class="post-content">
-                            <p>Lorem ipsum adipisicing elit. Veritatis laborum quas aliquam consecteturlam minima culpa sunt!</p>
-                            <img src="images/post-1.jpg" alt="">
-                        </div>
-                        <div class="post-do flex just--center">
-                          <div class="like flex gap-10 align--center just--center"><img src="icons/like.png" alt=""><p>Like</p><span>12</span></div>
-                          <div class="Comments flex gap-10 align--center just--center"><img src="icons/comment.png" alt=""><p>Comments</p><span>24</span></div>
-                          <div class="Share flex gap-10 align--center just--center"><img src="icons/share.png" alt=""><p>Share</p><span>3</span></div>
-                        </div>
-                        <div class="post-comment flex gap-20">
-                          <div class="comment-photo">
-                            <img src="images/personal/person-1.jpg" alt="">
-                          </div>
-                          <div class="comment-do flex align--center">
-                            <input type="text">
-                            <div class="comment-do-options flex gap-10">
-                              <img src="icons/camera.png" alt="">
-                              <img src="icons/image-gallery.png" alt="">
-                              <img src="icons/attach-file.png" alt="">
-                              <img src="icons/smile.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="comments-header flex just--between">
-                          <div class="all-comments flex gap-10">
-                            <p>All Comments</p><img src="icons/down-arrow.png" alt="">
-                          </div>
-                          <div class="sort">
-                            <p>sort by <span>Most Popular</span></p>
-                          </div>
-                        </div>   
-                        <div class="comment flex just--between gap-10">
-                          <div class="comment-photo">
-                            <img src="images/personal/person-1.jpg" alt="">
-                          </div>
-                          <div class="comment-name-content">
-                            <span class="name">Abdulaziz:</span>
-                            <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt dolor iure aperiam illo nesciunt cumque corporis iste nobis voluptates. Necessitatibus corporis quasi maxime iusto molestias fuga sint, nam hic?</span>
-                          </div>
-                        </div> 
-                        <div class="comment-footer flex just--between">
-                          <div class="reply flex gap-5"><img src="icons/share.png" alt=""><span>Reply comments</span></div>
-                          <div class="up-down">
-                            <img src="icons/down-arrow.png" alt=""> <span>Upvote</span>
-                            <span>|</span>
-                            <img src="icons/down-arrow.png" alt=""> <samp>Downvote</samp>
-                          </div>
-                        </div>
-                        <div class="view-all-comments text-center">
-                          <a href="">View all comments</a>
-                        </div>                    
-                      </div>
-                      <!-------------------Post End------------------>
-                    <!-------------------Post Start ------------------>
-                      <div class="post main-color-border">
-                        <div class="post-header flex just--between align--center">
-                            <div class="img-name-section flex gap-10">
-                              <img src="images/personal/person-1.jpg" alt="">
-                              <div class="info flex">
-                                <p class="name">Abdulaziz Aldeeb</p>
-                                <p class="date">12 minutes ago</p>
-                              </div>
-                            </div>
-                            <div class="options flex gap-10">
-                              <img src="icons/save-instagram.png" alt="">
-                              <img src="icons/more .png" alt="">
-                            </div>
-                        </div>
-                        <div class="post-content">
-                            <p>Lorem ipsum adipisicing elit. Veritatis laborum quas aliquam consecteturlam minima culpa sunt!</p>
-                            <img src="images/post-1.jpg" alt="">
-                        </div>
-                        <div class="post-do flex just--center">
-                          <div class="like flex gap-10 align--center just--center"><img src="icons/like.png" alt=""><p>Like</p><span>12</span></div>
-                          <div class="Comments flex gap-10 align--center just--center"><img src="icons/comment.png" alt=""><p>Comments</p><span>24</span></div>
-                          <div class="Share flex gap-10 align--center just--center"><img src="icons/share.png" alt=""><p>Share</p><span>3</span></div>
-                        </div>
-                        <div class="post-comment flex gap-20">
-                          <div class="comment-photo">
-                            <img src="images/personal/person-1.jpg" alt="">
-                          </div>
-                          <div class="comment-do flex align--center">
-                            <input type="text">
-                            <div class="comment-do-options flex gap-10">
-                              <img src="icons/camera.png" alt="">
-                              <img src="icons/image-gallery.png" alt="">
-                              <img src="icons/attach-file.png" alt="">
-                              <img src="icons/smile.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="comments-header flex just--between">
-                          <div class="all-comments flex gap-10">
-                            <p>All Comments</p><img src="icons/down-arrow.png" alt="">
-                          </div>
-                          <div class="sort">
-                            <p>sort by <span>Most Popular</span></p>
-                          </div>
-                        </div>   
-                        <div class="comment flex just--between gap-10">
-                          <div class="comment-photo">
-                            <img src="images/personal/person-1.jpg" alt="">
-                          </div>
-                          <div class="comment-name-content">
-                            <span class="name">Abdulaziz:</span>
-                            <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt dolor iure aperiam illo nesciunt cumque corporis iste nobis voluptates. Necessitatibus corporis quasi maxime iusto molestias fuga sint, nam hic?</span>
-                          </div>
-                        </div> 
-                        <div class="comment-footer flex just--between">
-                          <div class="reply flex gap-5"><img src="icons/share.png" alt=""><span>Reply comments</span></div>
-                          <div class="up-down">
-                            <img src="icons/down-arrow.png" alt=""> <span>Upvote</span>
-                            <span>|</span>
-                            <img src="icons/down-arrow.png" alt=""> <samp>Downvote</samp>
-                          </div>
-                        </div>
-                        <div class="view-all-comments text-center">
-                          <a href="">View all comments</a>
-                        </div>                    
-                      </div>
-                      <!-------------------Post End------------------>
-                    <!-------------------Post Start ------------------>
-                      <div class="post main-color-border">
-                        <div class="post-header flex just--between align--center">
-                            <div class="img-name-section flex gap-10">
-                              <img src="images/personal/person-1.jpg" alt="">
-                              <div class="info flex">
-                                <p class="name">Abdulaziz Aldeeb</p>
-                                <p class="date">12 minutes ago</p>
-                              </div>
-                            </div>
-                            <div class="options flex gap-10">
-                              <img src="icons/save-instagram.png" alt="">
-                              <img src="icons/more .png" alt="">
-                            </div>
-                        </div>
-                        <div class="post-content">
-                            <p>Lorem ipsum adipisicing elit. Veritatis laborum quas aliquam consecteturlam minima culpa sunt!</p>
-                            <img src="images/post-1.jpg" alt="">
-                        </div>
-                        <div class="post-do flex just--center">
-                          <div class="like flex gap-10 align--center just--center"><img src="icons/like.png" alt=""><p>Like</p><span>12</span></div>
-                          <div class="Comments flex gap-10 align--center just--center"><img src="icons/comment.png" alt=""><p>Comments</p><span>24</span></div>
-                          <div class="Share flex gap-10 align--center just--center"><img src="icons/share.png" alt=""><p>Share</p><span>3</span></div>
-                        </div>
-                        <div class="post-comment flex gap-20">
-                          <div class="comment-photo">
-                            <img src="images/personal/person-1.jpg" alt="">
-                          </div>
-                          <div class="comment-do flex align--center">
-                            <input type="text">
-                            <div class="comment-do-options flex gap-10">
-                              <img src="icons/camera.png" alt="">
-                              <img src="icons/image-gallery.png" alt="">
-                              <img src="icons/attach-file.png" alt="">
-                              <img src="icons/smile.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="comments-header flex just--between">
-                          <div class="all-comments flex gap-10">
-                            <p>All Comments</p><img src="icons/down-arrow.png" alt="">
-                          </div>
-                          <div class="sort">
-                            <p>sort by <span>Most Popular</span></p>
-                          </div>
-                        </div>   
-                        <div class="comment flex just--between gap-10">
-                          <div class="comment-photo">
-                            <img src="images/personal/person-1.jpg" alt="">
-                          </div>
-                          <div class="comment-name-content">
-                            <span class="name">Abdulaziz:</span>
-                            <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt dolor iure aperiam illo nesciunt cumque corporis iste nobis voluptates. Necessitatibus corporis quasi maxime iusto molestias fuga sint, nam hic?</span>
-                          </div>
-                        </div> 
-                        <div class="comment-footer flex just--between">
-                          <div class="reply flex gap-5"><img src="icons/share.png" alt=""><span>Reply comments</span></div>
-                          <div class="up-down">
-                            <img src="icons/down-arrow.png" alt=""> <span>Upvote</span>
-                            <span>|</span>
-                            <img src="icons/down-arrow.png" alt=""> <samp>Downvote</samp>
-                          </div>
-                        </div>
-                        <div class="view-all-comments text-center">
-                          <a href="">View all comments</a>
-                        </div>                    
-                      </div>
-                      <!-------------------Post End------------------>
-                      
+
                   </div>
                 </div>
             </div>
-            <div class="col-4 h-100 ">
+            
+
+            <div class="col-4">
               <div class="section-side">
+
+                <!-------------------Start Trending------------------>            
                 <div class="trinding main-color-border ">
                   <div class="trinding-header flex just--between">
                     <h3>Today Trending</h3>
-                    <img src="icons/down-arrow.png" alt="">
+                    <img class="trending-toggle" src="icons/down-arrow.png" alt="">
                   </div>
+                 <div class="trending-content">
                   <div class="trinding-elements">
                     <div class="trinding-row flex just--between">
                       <div class="info">
@@ -635,11 +377,17 @@
                         <span>24 in 1 hour</span>
                       </div>
                     </div>
-                  </div>
+                </div>
                   <div class="trending-see-all">
                     <a href="">See all</a>
                   </div>
                 </div>
+              </div>
+
+                <!-------------------End Trending------------------>    
+
+
+                <!-------------------Start Community ------------------>    
                 <div class="community-ads main-color-border">
                   <div class="community-ads-photo">
                     <img src="images/post-2.jpg" alt="">
@@ -650,84 +398,114 @@
                     <button>Join community</button>
                   </div>
                 </div>
-  
-  
-  
+                <!-------------------Start Community ------------------>    
+
+
+                <!------------------- Start Friends ------------------>    
                 <div class="friends main-color-border ">
                   <div class="friends-header flex just--between">
                     <h3>My friends</h3>
-                    <img src="icons/down-arrow.png" alt="">
+                    <img class="friends-toggle" src="icons/down-arrow.png" alt="">
                   </div>
-                  <div class="friends-elements">
-                    <div class="friends-row flex just--between">
-                      <div class="info">
-                        <img src="images/personal/customer-5.jpg" alt="">
-                        <div>
-                          <p>Mariam Galal</p>
-                          <p>Last active recently</p>
+                  <div class="friends-content">
+                    <div class="friends-elements">
+                      <div class="friends-row flex just--between">
+                        <div class="info">
+                          <img src="images/personal/customer-5.jpg" alt="">
+                          <div>
+                            <p>Mariam Galal</p>
+                            <p>Last active recently</p>
+                          </div>
+                        </div>
+                        <div class="friends-progress">
+                          <span>12</span>
                         </div>
                       </div>
-                      <div class="friends-progress">
-                        <span>12</span>
-                      </div>
                     </div>
-                  </div>
-  
-                  <div class="friends-elements">
-                    <div class="friends-row flex just--between">
-                      <div class="info">
-                        <img src="images/personal/customer-2.jpg" alt="">
-                        <div>
-                          <p>Mariam Galal</p>
-                          <p>Last active recently</p>
+    
+                    <div class="friends-elements">
+                      <div class="friends-row flex just--between">
+                        <div class="info">
+                          <img src="images/personal/customer-2.jpg" alt="">
+                          <div>
+                            <p>Mariam Galal</p>
+                            <p>Last active recently</p>
+                          </div>
+                        </div>
+                        <div class="friends-progress">
+                          <span>12</span>
                         </div>
                       </div>
-                      <div class="friends-progress">
-                        <span>12</span>
-                      </div>
                     </div>
-                  </div>
-                  
-                  <div class="friends-elements">
-                    <div class="friends-row flex just--between">
-                      <div class="info">
-                        <img src="images/personal/ben.jpg" alt="">
-                        <div>
-                          <p>Mariam Galal</p>
-                          <p>Last active recently</p>
+                    
+                    <div class="friends-elements">
+                      <div class="friends-row flex just--between">
+                        <div class="info">
+                          <img src="images/personal/ben.jpg" alt="">
+                          <div>
+                            <p>Mariam Galal</p>
+                            <p>Last active recently</p>
+                          </div>
+                        </div>
+                        <div class="friends-progress">
+                          <span>12</span>
                         </div>
                       </div>
-                      <div class="friends-progress">
-                        <span>12</span>
-                      </div>
                     </div>
-                  </div>
-  
-                  <div class="friends-elements">
-                    <div class="friends-row flex just--between">
-                      <div class="info">
-                        <img src="images/personal/customer-4.jpg" alt="">
-                        <div>
-                          <p>Mariam Galal</p>
-                          <p>Last active recently</p>
+    
+                    <div class="friends-elements">
+                      <div class="friends-row flex just--between">
+                        <div class="info">
+                          <img src="images/personal/customer-4.jpg" alt="">
+                          <div>
+                            <p>Mariam Galal</p>
+                            <p>Last active recently</p>
+                          </div>
+                        </div>
+                        <div class="friends-progress">
+                          <span>12</span>
                         </div>
                       </div>
-                      <div class="friends-progress">
-                        <span>12</span>
-                      </div>
-                    </div>
+                    </div>                    
                   </div>
+
                 </div>
+                <!------------------- End Friends ------------------>    
               </div>
             </div>
           </div>
+        </div>
+        
+        <div class="bottom-nav">
+          <a href="#">
+            <img src="icons/home.png" alt="">
+            <p>Home</p>
+          </a>
+          <a href="#">
+            <img src="icons/people.png" alt="">
+            <p>Community</p>
+          </a>
+          <a class="active post" href="#">
+            <ion-icon name="add-outline"></ion-icon>
+            <p>Post</p>
+          </a>
+          <a href="#">
+            <img src="icons/chat.png" alt="">
+            <p>Messages</p>
+          </a>
+          <a  href="#">
+            <img src="icons/notification.png" alt="">
+            <p>notifications</p>
+          </a>
         </div>
     </div>
   </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+    <script src="script.js"></script>
   </body>
 </html>

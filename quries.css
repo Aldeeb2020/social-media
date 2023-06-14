@@ -1,0 +1,143 @@
+/*This File has all defferent style for all defirent break point that brokin */
+
+/*
+First Breakpoint
+1300px
+*/
+@media (max-width:1300px){
+    html{
+        font-size: 9px;
+    }
+}
+
+/*
+Second Breakpoint
+1150px
+*/
+@media (max-width:1150px){
+    .new-list-text{
+        display: none;
+    }
+    .community{
+        padding: 2.5rem 0;
+    }
+}
+
+/*
+Thire Breakpoint
+950px
+*/
+@media (max-width:950px){
+    html{
+        font-size: 8px;
+    }
+
+    .right-side{
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: absolute;
+    }
+    .center-section-container{
+        padding: 2.5rem 0.5rem;
+    }
+    .col-4{
+        padding-left: 0;
+    }
+    .main-header .menu-icon{
+        display: block;
+    }
+    .left-side{
+        display: block;
+        position: absolute;
+        z-index: 10;
+        flex: 0 0 100%;
+        max-width: 300px;
+        transform: translateX(-100%)
+    }
+    .left-side--open{
+        transition: 0.5s;
+        transform: translateX(0%)
+    }
+    .left-side--close{
+        transition: 0.5s;
+        transform: translateX(-100%)
+    }
+    .icon-close-nav{
+        display: block;
+    }
+}
+/*
+Thire Breakpoint
+675px
+*/
+@media (max-width:675px){
+    .explore-section{
+        display: none;
+    }
+    .messages,.bill{
+        display: none;
+    }
+    .col-4{
+        display: none;
+    }
+    .col-8{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .left-side{
+        display: none;
+    }
+    .menu-icon{
+        display: none !important;
+    }
+    .bottom-nav{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #17181c;
+        position: fixed;
+        border-top: 1px solid rgb(60 59 59);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    .bottom-nav a{
+        padding: 2rem 0;
+    }
+    .bottom-nav img{
+        height: 4rem;
+        filter: brightness(0.6);
+    }
+    .bottom-nav p{
+        color: #9d9999;
+    }
+
+    /*Active btn nav*/
+    .bottom-nav a.active img{
+        height: 4rem;
+        filter: brightness(1);
+    } 
+
+    /*Add post*/
+    .bottom-nav ion-icon{
+        font-size: 4rem;
+        color: #fff;
+        background: #999999;
+        border-radius: 5px;
+    }
+
+}
+/*
+Fourth Breakpoint
+450px
+*/
+@media (max-width:450px){
+    html{
+        font-size: 7px;
+    }
+
+}

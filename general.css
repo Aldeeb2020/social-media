@@ -1,6 +1,77 @@
 /*******************
     Colors 
 *********************/
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+
+}
+
+.col-4{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-8{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.666667%;
+    /* flex: 0 0 66.666667%; */
+    max-width: 66.666667%;
+}
+
+.col-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
 .bg-first-color{
     background-color: #1e1f23;
 }
@@ -79,16 +150,16 @@
 
 /**gap******/ 
 .gap-5{
-    gap: 5px;
+    gap: 0.5rem;
 }
 .gap-10{
-    gap: 10px;
+    gap: 1rem;
 }
 .gap-15{
-    gap: 15px;
+    gap: 1.5rem;
 }
 .gap-20{
-    gap: 20px;
+    gap: 2rem;
 }
 /*******************
     Color components 
